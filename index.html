@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>whats in my bag</title>
+
+  <!-- ✅ 1. p5.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+  
+  <!-- ✅ 2. Matter.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #1a1a1a;
+    }
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+
+<!-- ✅ 3. Bewegung aktivieren durch Tippen -->
+<body onclick="requestAccess()">
+  <main></main>
+
+  <!-- ✅ 4. sketch.js kommt ganz am Ende -->
+  <script src="sketch.js"></script>
+</body>
+</html>
