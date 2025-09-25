@@ -85,7 +85,7 @@ function createBoundaries() {
 function createItems() {
     for (let i = 0; i < images.length; i++) {
         let img = images[i];
-        let scale = min(width, height)/1080 * 0.8;
+        let scale = min(width, height)/1080 * 0.65;
         let scaledWidth = img.width * scale;
         let scaledHeight = img.height * scale;
         const PHYSICS_SCALE = 0.6;
