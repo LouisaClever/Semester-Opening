@@ -22,12 +22,12 @@ let gravityY = 1;
 function preload() {
     // Normale Items (6 Stück)
     for (let i = 1; i <= 6; i++) {
-        images[i - 1] = loadImage(`item${i}.png`);
+        images[i - 1] = loadImage(i+".png");
     }
 }
 
 function setup() {
-    canvas = createCanvas(windowWidth, windowHeight);
+    canvas = createCanvas(1080/2.9, 1350/2.9);
 
     engine = Engine.create();
     world = engine.world;
@@ -85,7 +85,7 @@ function createBoundaries() {
 function createItems() {
     for (let i = 0; i < images.length; i++) {
         let img = images[i];
-        let scale = min(width, height)/1080 * 0.1;
+        let scale = min(width, height)/1080 * 1.2;
         let scaledWidth = img.width * scale;
         let scaledHeight = img.height * scale;
         const PHYSICS_SCALE = 0.6;
@@ -107,6 +107,7 @@ function createItems() {
 
         items.push(body);
         World.add(world, body);
+        console.log("img: "+ img + " scale: " + scale + " width: " + img.width + " " + scaledWidth)
     }
 }
 
