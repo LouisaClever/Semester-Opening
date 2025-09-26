@@ -21,7 +21,7 @@ let gravityY = 1;
 
 function preload() {
     // Normale Items (6 Stück)
-    for (let i = 1; i <= 6; i++) {
+    for (let i = 1; i <= 10; i++) {
         images[i - 1] = loadImage(i+".png");
     }
 }
